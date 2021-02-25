@@ -14,16 +14,14 @@
 <body>
 
   <?php
+    session_start();
+    
+    require_once "../../connection.php";
+    require_once "./header.php";
+    require_once "./article.php";
+    require_once "../home/footer.php";
 
-  session_start();
-  require_once "../../connection.php";
-
-  $city_name = $_POST['city_name'];
-
-  echo "
-    <h1 class='title'>" . $city_name . "</h1>
-  ";
-
+    mysqli_close($connection);
   ?>
 
   <script src="../../script/nav_options.js"></script>

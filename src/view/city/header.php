@@ -5,7 +5,19 @@
         <a href="http://www.nepomuceno.cefetmg.br/" target="_blank">
           <img src="../../../assets/img/logo.png" alt="Logo CEFET" class="logo" />
         </a>
-        <h1 class="title">Análise demográfica da microrregião de Lavras-MG nos anos de 2000-2010</h1>
+        
+        <?php
+
+        $city_name = $_POST['city_name'];
+        $id_city = $_POST['id_city'];
+        $_SESSION['current_city'] = $id_city;
+
+        echo "
+        <h1 class='title'>" . $city_name . "</h1>
+        ";
+
+        ?>
+
       </div>
 
       <button
@@ -21,9 +33,7 @@
       </button>
 
       <div class="collapse navbar-collapse" id="navbar-links">
-        <a href="#cities" class="nav-options">Municípios</a>
-        <a href="#about" class="nav-options">Sobre</a>
-        <a href="#feedback" class="nav-options">Feedback</a>
+        <a href="#mort" class="nav-options">Mortalidade</a>
       </div>
     </nav>
   </div>

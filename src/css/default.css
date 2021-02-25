@@ -6,8 +6,8 @@
 :root {
     font-size: 62.5%;
 
-    --primary-color: #606c38;
-    --secondary-color: #dda15e;
+    --primary: #606c38;
+    --secondary: #dda15e;
     --dark-primary: #283618;
     --dark-secondary: #bc6c25;
     --backgroud: #fefae0;

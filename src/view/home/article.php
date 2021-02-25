@@ -1,13 +1,13 @@
 <article>
   <section id="cities">
-    <h2 class="sec-title">Cidades</h2>
+    <h2 class="sec-title">Municípios</h2>
     <div class="img-grid">
       <?php
 
       session_start();
       require_once "../../connection.php";
 
-      $sql = "SELECT city_name, image FROM city";
+      $sql = "SELECT id_city, city_name, image FROM city";
 
       $result = mysqli_query($connection, $sql);
 
@@ -16,6 +16,7 @@
         while($city = mysqli_fetch_assoc($result)) {
           echo "
             <form class='grid-item' action='../city/index.php' method='post'>
+              <input type='text' name='id_city' value='".$city['id_city']."' hidden/>
               <input type='text' name='city_name' value='".$city['city_name']."' hidden/>
               <button type='submit' class='link-to-city'>
                 <img class='img-city' src='../../../assets/img/cities/".$city['image'].".jpg' alt='imagem'>
@@ -25,6 +26,7 @@
           ";
         }
       }
+      mysqli_close($connection);
 
       ?>
     </div>
