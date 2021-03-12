@@ -15,7 +15,7 @@
   --selection-color: #fefae0;
 }
 
-::selection {
+*::selection {
   background-color: var(--transparent);
   color: var(--selection-color);
 }

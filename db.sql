@@ -5,24 +5,25 @@ USE micro;
 CREATE TABLE IF NOT EXISTS city (
     id_city int(10) PRIMARY KEY NOT NULL,
     city_name varchar(100) NOT NULL,
-    image varchar(255) NOT NULL
+    image varchar(255) NOT NULL,
+    location varchar(500) NOT NULL
 );
 
 CREATE TABLE IF NOT EXISTS feedback (
     id_feedback int(10) PRIMARY KEY AUTO_INCREMENT NOT NULL,
-    content varchar(255) NOT NULL,
+    content varchar(127) NOT NULL,
     date varchar(50) NOT NULL
 );
 
-INSERT INTO city(id_city, city_name, image) VALUES(313820, "Lavras", "lavras");
-INSERT INTO city(id_city, city_name, image) VALUES(311460, "Carrancas", "carrancas");
-INSERT INTO city(id_city, city_name, image) VALUES(313040, "Ijaci", "ijaci");
-INSERT INTO city(id_city, city_name, image) VALUES(313080, "Ingai", "ingai");
-INSERT INTO city(id_city, city_name, image) VALUES(313430, "Itumirim", "itumirim");
-INSERT INTO city(id_city, city_name, image) VALUES(313450, "Itutinga", "itutinga");
-INSERT INTO city(id_city, city_name, image) VALUES(313870, "Luminárias", "luminarias");
-INSERT INTO city(id_city, city_name, image) VALUES(314460, "Nepomuceno", "nepomuceno");
-INSERT INTO city(id_city, city_name, image) VALUES(315470, "Ribeirão Vermelho", "ribeirao_vermelho");
+INSERT INTO city(id_city, city_name, image, location) VALUES(313820, "Lavras", "lavras", "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118991.16458423786!2d-45.06839132141464!3d-21.252701193246974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9ffd8039b103f9%3A0x39e3fcfba35cb1f3!2sLavras%2C%20MG%2C%2037200-000!5e0!3m2!1spt-BR!2sbr!4v1615515196964!5m2!1spt-BR!2sbr");
+INSERT INTO city(id_city, city_name, image, location) VALUES(311460, "Carrancas", "carrancas", "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14849.967390793001!2d-44.650285478883404!3d-21.488446405725004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9f94735a4b3c93%3A0x3e75d002617f17b7!2sCarrancas%2C%20MG%2C%2037245-000!5e0!3m2!1spt-BR!2sbr!4v1615516675656!5m2!1spt-BR!2sbr");
+INSERT INTO city(id_city, city_name, image, location) VALUES(313040, "Ijaci", "ijaci", "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29762.911353598654!2d-44.94021590565995!3d-21.17769753124433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9ff8ad1cefebe9%3A0x9e712c602e8b676f!2sIjaci%2C%20MG%2C%2037205-000!5e0!3m2!1spt-BR!2sbr!4v1615516753081!5m2!1spt-BR!2sbr");
+INSERT INTO city(id_city, city_name, image, location) VALUES(313080, "Ingai", "ingai", "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7429.3688332049705!2d-44.92324097728268!3d-21.402327254174534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9fe6a553cfd343%3A0x3aac5c8fcf276348!2zSW5nYcOtLCBNRywgMzcyMTUtMDAw!5e0!3m2!1spt-BR!2sbr!4v1615516797376!5m2!1spt-BR!2sbr");
+INSERT INTO city(id_city, city_name, image, location) VALUES(313430, "Itumirim", "itumirim", "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14867.221519403616!2d-44.87888777895057!3d-21.318705183979827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9ffac173564663%3A0xe5408be8e6895aad!2sItumirim%2C%20MG%2C%2037210-000!5e0!3m2!1spt-BR!2sbr!4v1615516849998!5m2!1spt-BR!2sbr");
+INSERT INTO city(id_city, city_name, image, location) VALUES(313450, "Itutinga", "itutinga", "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14869.391350785849!2d-44.66945837895901!3d-21.297267731246574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9f8b08a07218bb%3A0x49d98a8adfb4fa1c!2sItutinga%2C%20MG%2C%2036390-000!5e0!3m2!1spt-BR!2sbr!4v1615516907439!5m2!1spt-BR!2sbr");
+INSERT INTO city(id_city, city_name, image, location) VALUES(313870, "Luminárias", "luminarias", "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14847.550797323642!2d-44.911173328874!3d-21.51211825877213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9fdc4c4b263091%3A0x71410ffc16e9e213!2sLumin%C3%A1rias%2C%20MG%2C%2037240-000!5e0!3m2!1spt-BR!2sbr!4v1615516946722!5m2!1spt-BR!2sbr");
+INSERT INTO city(id_city, city_name, image, location) VALUES(314460, "Nepomuceno", "nepomuceno", "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29751.016864868194!2d-45.24939850556695!3d-21.23672124520235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94caa0ba45b84371%3A0xceedf06bc4d6bc66!2sNepomuceno%2C%20MG%2C%2037250-000!5e0!3m2!1spt-BR!2sbr!4v1615516983986!5m2!1spt-BR!2sbr");
+INSERT INTO city(id_city, city_name, image, location) VALUES(315470, "Ribeirão Vermelho", "ribeirao_vermelho", "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14880.824605695416!2d-45.069119329003534!3d-21.18396806684951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94caaa3b18b36ea3%3A0xc93716c226e93418!2sRibeir%C3%A3o%20Vermelho%2C%20MG%2C%2037264-000!5e0!3m2!1spt-BR!2sbr!4v1615517017378!5m2!1spt-BR!2sbr");
 
 -- ----------------------------------------------------
 

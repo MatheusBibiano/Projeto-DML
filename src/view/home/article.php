@@ -42,12 +42,13 @@
   <section id="feedback">
       <h2 class="sec-title">Feedback</h2>
       <form action="../../receive_feedback.php" method="post" class="feedback-container">
-        <label for='feedback' id="msg">Avalie nosso site, envie sujestões e críticas para que possamos melhora sua experiência</label>
+        <label for='feedback' id="msg">Avalie nosso site, envie sujestões e críticas para que possamos melhora sua experiência:</label>
         <textarea 
           name="feedback" 
           id="feedback-field" 
           cols="35" 
-          rows="5" 
+          rows="5"
+          maxlength="127"
           required
         ></textarea>
         <button type="submit" id="submit">Enviar</button>

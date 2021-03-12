@@ -25,6 +25,8 @@
       </button>
 
       <div class="collapse navbar-collapse" id="navbar-links">
+        <a href="../home/index.php" class="nav-options">Home</a>
+        <a href="#cityMap" class="nav-options">Mapa</a>
         <a href="#mort" class="nav-options">Mortalidade</a>
       </div>
     </nav>

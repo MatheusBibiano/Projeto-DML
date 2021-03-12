@@ -27,6 +27,11 @@ section {
   margin: 0.5rem;
   box-shadow: 0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.08),
     -0.5rem -0.5rem 2rem rgba(0, 0, 0, 0.08);
+  transition: background-color .25s;
+}
+
+.grid-item:hover {
+  background-color: rgb(236, 44, 102);
 }
 
 .link-to-city {
@@ -44,7 +49,6 @@ section {
   object-fit: cover;
   width: 25rem;
   height: 15rem;
-  border-radius: .3rem;
 }
 
 .img-title {
