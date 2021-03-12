@@ -13,8 +13,8 @@
 }
 
 .logo {
-  max-width: 15rem;
-  max-height: 15rem;
+  max-width: 14rem;
+  max-height: 14rem;
   object-fit: cover;
   margin: 3rem 0 3rem 3rem;
 }
@@ -31,6 +31,7 @@
   font-size: 1.6rem;
   color: #000;
   margin: 0 2rem 0 2rem;
+  transition: 0.2s;
 }
 
 .nav-options:hover {
@@ -39,13 +40,12 @@
   border-top-right-radius: 3px;
   text-decoration: none;
   color: #fff;
-  transition: 0.3s;
 }
 
 .navbar-toggler {
-    align-self: flex-end;
-    padding: 2rem 0 2rem 0;
-    margin: 1rem 2rem 1rem 1rem;
+  align-self: flex-end;
+  padding: 2rem 0 2rem 0;
+  margin: 1rem 2rem 1rem 1rem;
 }
 
 @media (max-width: 1080px) {
@@ -55,7 +55,7 @@
 
   .nav-options {
     font-size: 2rem;
-}
+  }
 }
 
 @media (max-width: 1000px) {
@@ -65,7 +65,7 @@
 
   .nav-options {
     font-size: 2rem;
-}
+  }
 }
 
 @media (max-width: 930px) {
@@ -100,16 +100,16 @@
   }
 
   .logo {
-      margin: 0;
-      margin-bottom: 3rem;
+    margin: 0;
+    margin-bottom: 3rem;
   }
 
   .title {
-      margin: 0 1rem 0 1rem;
+    margin: 0 1rem 0 1rem;
   }
 
   .nav-options {
-      font-size: 2rem;
+    font-size: 2rem;
   }
 
   #navbar-links {
@@ -118,15 +118,15 @@
 }
 
 @media (max-width: 644px) {
-    .title {
-        margin-right: 5rem;
-        margin-left: 5rem;
-    }
+  .title {
+    margin-right: 5rem;
+    margin-left: 5rem;
+  }
 }
 
 @media (max-width: 409) {
-    .title {
-        margin-right: 2rem;
-        margin-left: 2rem;
-    }
+  .title {
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
 }

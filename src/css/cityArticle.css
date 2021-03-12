@@ -1,25 +1,37 @@
 .tables-section {
-    padding: 5rem;
+  padding: 5rem;
 }
 
 .tables-section-title {
-    padding: 1rem;
-    border-bottom: solid 2px rgb(28, 137, 201);
-    font-size: 2rem;
-    margin: 0 5rem 2rem 5rem;
-    text-transform: uppercase;
+  padding: 1rem;
+  border-bottom: solid 2px rgb(28, 137, 201);
+  font-size: 2rem;
+  margin: 0 5rem 2rem 5rem;
+  text-transform: uppercase;
 }
 
 .table-container {
-    margin: 5rem 5rem;
-    border-bottom: solid 2px var(--secondary);
-    padding-bottom: 1rem;
+  margin: 5rem 5rem;
+  border: solid 1px #000;
+  padding-bottom: 1rem;
 }
 
 .table-container-title {
-    padding: 1rem;
-    font-size: 2rem;
-    text-transform: uppercase;
-    background-color: var(--primary);
-    color: var(--font-color);
+  padding: 1rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  background-color: rgb(143, 214, 255);
+  color: #000;
+  margin: 0;
 }
+
+.table td,
+.table th {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+/* .table tbody tr td,
+.table tbody tr th {
+  border: 1px solid ;
+} */

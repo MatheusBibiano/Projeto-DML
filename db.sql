@@ -10,8 +10,8 @@ CREATE TABLE IF NOT EXISTS city (
 
 CREATE TABLE IF NOT EXISTS feedback (
     id_feedback int(10) PRIMARY KEY AUTO_INCREMENT NOT NULL,
-    content varchar(255) NOT NULL
-    -- Add date in the feature
+    content varchar(255) NOT NULL,
+    date varchar(50) NOT NULL
 );
 
 INSERT INTO city(id_city, city_name, image) VALUES(313820, "Lavras", "lavras");
@@ -35,7 +35,6 @@ CREATE TABLE `mortallocalocorrencia` (
   `via_publica` int(255) NOT NULL,
   `outros` int(255) NOT NULL,
   `ignorado` int(255) NOT NULL
-  -- `total` int(255) NOT NULL
 );
 
 INSERT INTO `mortallocalocorrencia` (`id_city`, `hospital`, `outro_estabelecimento_publico`, `domicilio`, `via_publica`, `outros`, `ignorado`) VALUES
@@ -48,8 +47,6 @@ INSERT INTO `mortallocalocorrencia` (`id_city`, `hospital`, `outro_estabelecimen
 (313870, 5, 31, 202, 13, 28, 0),
 (314460, 1359, 10, 975, 65, 83, 4),
 (315470, 110, 1, 119, 6, 33, 0);
--- ('Total', 11132, 1931, 4316, 334, 1278, 9, 19000);
--- Total deve ser calculado pelo banco de dados
 
 
 CREATE TABLE `mortano` (
@@ -73,7 +70,6 @@ CREATE TABLE `mortano` (
   `_2016` int(255) NOT NULL,
   `_2017` int(255) NOT NULL,
   `_2018` int(255) NOT NULL
---   `total` int(255) NOT NULL
 );
 
 INSERT INTO `mortano` (`id_city`, `_2000`, `_2001`, `_2002`, `_2003`, `_2004`, `_2005`, `_2006`, `_2007`, `_2008`, `_2009`, `_2010`, `_2011`, `_2012`, `_2013`, `_2014`, `_2015`, `_2016`, `_2017`, `_2018`) VALUES
@@ -86,8 +82,6 @@ INSERT INTO `mortano` (`id_city`, `_2000`, `_2001`, `_2002`, `_2003`, `_2004`, `
 (313870, 12, 15, 26, 23, 11, 14, 17, 3, 0, 19, 19, 13, 14, 9, 19, 13, 20, 18, 14),
 (314460, 91, 107, 117, 131, 132, 129, 122, 113, 118, 132, 142, 134, 140, 145, 140, 143, 168, 147, 145),
 (315470, 15, 5, 7, 12, 10, 8, 10, 12, 18, 16, 22, 16, 11, 16, 10, 24, 15, 22, 20);
--- ('Total', 918, 877, 915, 974, 924, 955, 959, 978, 862, 983, 1025, 1019, 1059, 1012, 1089, 1072, 1099, 1173, 1107, 19000);
-
 
 CREATE TABLE `mortestadocivil` (
   `id_city` int(10) PRIMARY KEY NOT NULL,
@@ -97,7 +91,6 @@ CREATE TABLE `mortestadocivil` (
   `separado` int(255) NOT NULL,
   `outro` int(255) NOT NULL,
   `ignorado` int(255) NOT NULL
---   `total` int(255) NOT NULL
 );
 
 INSERT INTO `mortestadocivil` (`id_city`, `solteiro`, `casado`, `viuvo`, `separado`, `outro`, `ignorado`) VALUES
@@ -110,7 +103,6 @@ INSERT INTO `mortestadocivil` (`id_city`, `solteiro`, `casado`, `viuvo`, `separa
 (313870, 72, 106, 79, 10, 2, 10),
 (314460, 597, 898, 816, 86, 2, 97),
 (315470, 64, 87, 79, 8, 3, 28);
--- ('Total', 3948, 7161, 5343, 758, 117, 1673, 19000);
 
 
 CREATE TABLE `mortidade` (
@@ -127,7 +119,6 @@ CREATE TABLE `mortidade` (
   `_60_69anos` int(255) NOT NULL,
   `_70_79anos` int(255) NOT NULL,
   `maior80anos` int(255) NOT NULL
---   `total` int(255) NOT NULL
 );
 
 INSERT INTO `mortidade` (`id_city`, `menor1ano`, `_1_4anos`, `_5_9anos`, `_10_14anos`, `_15_19anos`, `_20_29anos`, `_30_39anos`, `_40_49anos`, `_50_59anos`, `_60_69anos`, `_70_79anos`, `maior80anos`) VALUES
@@ -140,7 +131,6 @@ INSERT INTO `mortidade` (`id_city`, `menor1ano`, `_1_4anos`, `_5_9anos`, `_10_14
 (313870, 3, 0, 1, 2, 0, 9, 22, 24, 28, 45, 72, 73),
 (314460, 36, 4, 1, 7, 10, 55, 117, 166, 263, 389, 569, 879),
 (315470, 2, 1, 1, 3, 3, 12, 10, 18, 40, 55, 52, 72);
--- ('Total', 703, 85, 44, 73, 149, 567, 913, 1498, 2290, 2950, 4194, 5534, 19000);
 
 
 CREATE TABLE `mortind` (
@@ -149,7 +139,6 @@ CREATE TABLE `mortind` (
   `doencasc` int(255) NOT NULL,
   `doencasr` int(255) NOT NULL,
   `afeccoes` int(255) NOT NULL
---   `total` int(255) NOT NULL
 );
 
 INSERT INTO `mortind` (`id_city`, `sintsinais`, `doencasc`, `doencasr`, `afeccoes`) VALUES
@@ -162,14 +151,12 @@ INSERT INTO `mortind` (`id_city`, `sintsinais`, `doencasc`, `doencasr`, `afeccoe
 (313870, 68, 0, 2, 0),
 (314460, 206, 8, 1, 3),
 (315470, 24, 0, 0, 0);
--- (Total', 1297, 16, 66, 36, 1415);
 
 
 CREATE TABLE `mortsexo` (
   `id_city` int(10) PRIMARY KEY NOT NULL,
   `masc` int(255) NOT NULL,
   `fem` int(255) NOT NULL
---   `total` int(255) NOT NULL
 );
 
 INSERT INTO `mortsexo` (`id_city`, `masc`, `fem`) VALUES
@@ -182,4 +169,3 @@ INSERT INTO `mortsexo` (`id_city`, `masc`, `fem`) VALUES
 (313870, 173, 106),
 (314460, 1390, 1106),
 (315470, 150, 119);
--- ('Total', 10507, 8493, 19000);

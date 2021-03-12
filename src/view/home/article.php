@@ -4,16 +4,17 @@
     <div class="img-grid">
       <?php
 
-      session_start();
-      require_once "../../connection.php";
+      try {
+        $sql = "SELECT id_city, city_name, image FROM city";
+        $stmt = $connection->prepare($sql);
+        $stmt->execute();
+      } catch(PDOException $err) {
+        echo "ERRO: ".$err->getMessage();
+      }
 
-      $sql = "SELECT id_city, city_name, image FROM city";
-
-      $result = mysqli_query($connection, $sql);
-
-      if(mysqli_num_rows($result) > 0)
+      if($stmt->rowCount() > 0)
       {
-        while($city = mysqli_fetch_assoc($result)) {
+        while($city = $stmt->fetch(PDO::FETCH_ASSOC)) {
           echo "
             <form class='grid-item' action='../city/index.php' method='post'>
               <input type='text' name='id_city' value='".$city['id_city']."' hidden/>
@@ -26,7 +27,6 @@
           ";
         }
       }
-      mysqli_close($connection);
 
       ?>
     </div>

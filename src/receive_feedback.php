@@ -4,18 +4,21 @@ require_once "./connection.php";
 
 $content = $_POST['feedback'];
 
-$sql = "INSERT INTO feedback(content) VALUE('$content');";
+$date = new DateTime();
+$date = $date->format('d/m/Y');
 
-if(mysqli_query($connection, $sql)) {
+$sql = "INSERT INTO feedback(content, date) VALUE('$content', '$date')";
+
+try {
+    $stmt = $connection->prepare($sql);
+    $stmt->execute();
     echo "<script> 
             alert('Obrigado pelo feedback!');
             window.location.href='./view/home/index.php';
           </script>";
-}
-else {
-    echo "Erro: ".$sql."<br>".mysqli_error($connection);
+
+  } catch(PDOException $err) {
+    echo "ERRO: ".$err->getMessage();
 }
 
-mysqli_close($connection);
-
-?>
+$connection = null;

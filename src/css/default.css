@@ -1,29 +1,28 @@
 @font-face {
-    font-family: "Roboto";
-    src: url("../../assets/font/Roboto/Roboto-Regular.ttf");
+  font-family: "Roboto";
+  src: url("../../assets/font/Roboto/Roboto-Regular.ttf");
 }
 
 :root {
-    font-size: 62.5%;
+  font-size: 62.5%;
 
-    --primary: #606c38;
-    --secondary: #dda15e;
-    --dark-primary: #283618;
-    --dark-secondary: #bc6c25;
-    --backgroud: #fefae0;
-    --font-color: #fefae0;
-    --transparent: rgb(0, 0, 0, 0.5);
-    --selection-color: #fefae0;
+  --primary: rgb(143, 214, 255);
+  --secondary: rgb(28, 137, 201);
+  --backgroud: #fefae0;
+  --back: #000;
+  --font-hover: #fefae0;
+  --transparent: rgb(0, 0, 0, 0.5);
+  --selection-color: #fefae0;
 }
 
 ::selection {
-    background-color: var(--transparent);
-    color: var(--selection-color);
+  background-color: var(--transparent);
+  color: var(--selection-color);
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Roboto";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
 }

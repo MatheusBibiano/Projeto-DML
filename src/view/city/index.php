@@ -7,21 +7,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <title>DML | Cidades</title>
+  <title>DML | Cidade</title>
   <link rel="stylesheet" href="../../css/city/main.css" />
 </head>
 
 <body>
 
   <?php
-    session_start();
-    
-    require_once "../../connection.php";
-    require_once "./header.php";
-    require_once "./article.php";
-    require_once "../home/footer.php";
-
-    mysqli_close($connection);
+  session_start();
+  require_once "../../connection.php";
+  require_once "./header.php";
+  require_once "./article.php";
+  require_once "../home/footer.php";
+  $connection = null;
   ?>
 
   <script src="../../script/nav_options.js"></script>

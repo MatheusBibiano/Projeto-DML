@@ -5,10 +5,15 @@ $current_city = $_SESSION['current_city'];
 $sql = "SELECT id_city, _2000, _2001, _2002, _2003, _2004, _2005, _2006, _2007, _2008, _2009, _2010, _2011, _2012, _2013, _2014, _2015, _2016, _2017, _2018, SUM(_2000 + _2001 + _2002 + _2003 + _2004 + _2005 + _2006 + _2007 + _2008 + _2009 + _2010 + _2011 + _2012 + _2013 + _2014 + _2015 + _2016 + _2017 + _2018) AS total_mortano
         FROM mortano WHERE id_city='$current_city'";
 
-$result = mysqli_query($connection, $sql);
+try {
+    $stmt = $connection->prepare($sql);
+    $stmt->execute();
+  } catch(PDOException $err) {
+    echo "ERRO: ".$err->getMessage();
+  }
 
-if (mysqli_num_rows($result) > 0) {
-    while ($city = mysqli_fetch_assoc($result)) {
+if ($stmt->rowCount() > 0) {
+    while ($city = $stmt->fetch(PDO::FETCH_ASSOC)) {
         echo "
         <thead class='thead-dark'>
         <tr>
@@ -63,5 +68,3 @@ if (mysqli_num_rows($result) > 0) {
         ";
     }
 }
-
-?>

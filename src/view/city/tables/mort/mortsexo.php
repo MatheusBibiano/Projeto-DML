@@ -5,10 +5,15 @@ $current_city = $_SESSION['current_city'];
 $sql = "SELECT id_city, masc, fem, SUM(masc + fem) AS total_mortsexo 
         FROM mortsexo WHERE id_city='$current_city'";
 
-$result = mysqli_query($connection, $sql);
+try {
+    $stmt = $connection->prepare($sql);
+    $stmt->execute();
+  } catch(PDOException $err) {
+    echo "ERRO: ".$err->getMessage();
+  }
 
-if (mysqli_num_rows($result) > 0) {
-    while ($city = mysqli_fetch_assoc($result)) {
+if ($stmt->rowCount() > 0) {
+    while ($city = $stmt->fetch(PDO::FETCH_ASSOC)) {
         echo "
         <thead class='thead-dark'>
         <tr>
@@ -29,5 +34,3 @@ if (mysqli_num_rows($result) > 0) {
         ";
     }
 }
-
-?>

@@ -5,10 +5,15 @@ $current_city = $_SESSION['current_city'];
 $sql = "SELECT id_city, menor1ano, _1_4anos, _5_9anos, _10_14anos, _15_19anos, _20_29anos, _30_39anos, _40_49anos, _50_59anos, _60_69anos, _70_79anos, maior80anos, SUM(menor1ano + _1_4anos + _5_9anos + _10_14anos + _15_19anos + _20_29anos + _30_39anos + _40_49anos + _50_59anos + _60_69anos + _70_79anos + maior80anos) AS total_mortidade
         FROM mortidade WHERE id_city='$current_city'";
 
-$result = mysqli_query($connection, $sql);
+try {
+    $stmt = $connection->prepare($sql);
+    $stmt->execute();
+  } catch(PDOException $err) {
+    echo "ERRO: ".$err->getMessage();
+  }
 
-if (mysqli_num_rows($result) > 0) {
-    while ($city = mysqli_fetch_assoc($result)) {
+if ($stmt->rowCount() > 0) {
+    while ($city = $stmt->fetch(PDO::FETCH_ASSOC)) {
         echo "
         <thead class='thead-dark'>
         <tr>
@@ -49,5 +54,3 @@ if (mysqli_num_rows($result) > 0) {
         ";
     }
 }
-
-?>
