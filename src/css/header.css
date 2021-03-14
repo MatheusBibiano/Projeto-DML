@@ -1,6 +1,8 @@
 .navbar {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: rgb(143, 214, 255);
   border-bottom: solid 5px rgb(28, 137, 201);
   padding: 0;
@@ -9,21 +11,28 @@
 .logo-container {
   display: flex;
   align-items: center;
-  align-self: flex-start;
+  align-self: center;
 }
 
 .logo {
   max-width: 14rem;
   max-height: 14rem;
   object-fit: cover;
-  margin: 3rem 0 3rem 3rem;
 }
 
 .title {
   margin-left: 5rem;
+  margin-bottom: 0;
   text-transform: uppercase;
   font-size: 2.6rem;
   text-align: center;
+}
+
+.cityTitle {
+  font-size: 4rem;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  margin: 0;
 }
 
 .nav-options {
@@ -40,8 +49,8 @@
   border-top-right-radius: 3px;
   text-decoration: none;
   color: #fff;
-  filter: drop-shadow(-.5rem -.5rem .5rem rgba(0, 0, 0, 0.07))
-          drop-shadow(.5rem 0 .5rem rgba(0, 0, 0, 0.07));
+  box-shadow: .5rem 0 .5rem rgba(0, 0, 0, 0.05),
+              -.5rem -.5rem .5rem rgba(0, 0, 0, 0.05);
 }
 
 .navbar-toggler {

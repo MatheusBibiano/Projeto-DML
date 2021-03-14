@@ -1,3 +1,7 @@
+article {
+  margin-top: 15rem;
+}
+
 .tables-section {
   padding: 5rem;
 }
@@ -14,6 +18,8 @@
   margin: 5rem 5rem;
   border: solid 1px #000;
   padding-bottom: 1rem;
+  box-shadow: 0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.08),
+              -0.5rem -0.5rem 2rem rgba(0, 0, 0, 0.08);
 }
 
 .table-container-title {
@@ -31,7 +37,6 @@
   text-align: center;
 }
 
-/* .table tbody tr td,
-.table tbody tr th {
-  border: 1px solid ;
-} */
+.table th {
+  text-transform: uppercase;
+}

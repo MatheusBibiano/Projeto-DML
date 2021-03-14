@@ -170,3 +170,283 @@ INSERT INTO `mortsexo` (`id_city`, `masc`, `fem`) VALUES
 (313870, 173, 106),
 (314460, 1390, 1106),
 (315470, 150, 119);
+
+
+-- MORTALIDADE INFANTIL
+
+CREATE TABLE `mort_inf_ano` (
+  `id_city` int(10) PRIMARY KEY NOT NULL,
+  `_2000` int(255) NOT NULL,
+  `_2001` int(255) NOT NULL,
+  `_2002` int(255) NOT NULL,
+  `_2003` int(255) NOT NULL,
+  `_2004` int(255) NOT NULL,
+  `_2005` int(255) NOT NULL,
+  `_2006` int(255) NOT NULL,
+  `_2007` int(255) NOT NULL,
+  `_2008` int(255) NOT NULL,
+  `_2009` int(255) NOT NULL,
+  `_2010` int(255) NOT NULL,
+  `_2011` int(255) NOT NULL,
+  `_2012` int(255) NOT NULL,
+  `_2013` int(255) NOT NULL,
+  `_2014` int(255) NOT NULL,
+  `_2015` int(255) NOT NULL,
+  `_2016` int(255) NOT NULL,
+  `_2017` int(255) NOT NULL,
+  `_2018` int(255) NOT NULL
+);
+
+INSERT INTO `mort_inf_ano` (`id_city`, `_2000`, `_2001`, `_2002`, `_2003`, `_2004`, `_2005`, `_2006`, `_2007`, `_2008`, `_2009`, `_2010`, `_2011`, `_2012`, `_2013`, `_2014`, `_2015`, `_2016`, `_2017`, `_2018`) VALUES
+(311460, 0, 0, 0, 1, 2, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0),
+(313040, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(313080, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(313450, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(313820, 52, 39, 42, 27, 31, 27, 30, 31, 35, 32, 17, 34, 44, 39, 34, 37, 33, 43, 28),
+(313870, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(314460, 3, 0, 4, 4, 5, 2, 1, 3, 0, 3, 0, 2, 0, 1, 3, 0, 2, 1, 2),
+(315470, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0);
+
+-- --------------------------------------------------------
+
+CREATE TABLE `mort_causas_indefinidas` (
+  `id_city` int(10) PRIMARY KEY NOT NULL,
+  `sint_anormais` int(255) NOT NULL,
+  `afccoes_perinatal` int(255) NOT NULL
+);
+
+INSERT INTO `mort_causas_indefinidas` (`id_city`, `sint_anormais`, `afccoes_perinatal`) VALUES
+(313080, 1, 0),
+(313450, 1, 0),
+(313820, 5, 33),
+(313870, 2, 0),
+(314460, 5, 3);
+
+-- --------------------------------------------------------
+
+CREATE TABLE `mort_escolaridade_mae` (
+  `id_city` int(10) PRIMARY KEY NOT NULL,
+  `nenhuma` int(255) NOT NULL,
+  `_1_3anos` int(255) NOT NULL,
+  `_4_7anos` int(255) NOT NULL,
+  `_8_11anos` int(255) NOT NULL,
+  `_12anos_mais` int(255) NOT NULL,
+  `ignorado` int(255) NOT NULL
+);
+
+INSERT INTO `mort_escolaridade_mae` (`id_city`, `nenhuma`, `_1_3anos`, `_4_7anos`, `_8_11anos`, `_12anos_mais`, `ignorado`) VALUES
+(311460, 2, 0, 0, 0, 0, 2),
+(313040, 0, 0, 0, 0, 0, 1),
+(313080, 0, 0, 0, 0, 0, 1),
+(313450, 0, 0, 0, 0, 0, 1),
+(313820, 8, 44, 135, 221, 72, 175),
+(313870, 0, 1, 0, 1, 0, 1),
+(314460, 1, 2, 1, 4, 0, 28),
+(315470, 0, 0, 0, 1, 0, 1);
+
+-- --------------------------------------------------------
+
+CREATE TABLE `mort_faixa_etaria` (
+  `id_city` int(10) PRIMARY KEY NOT NULL,
+  `menos24horas` int(255) NOT NULL,
+  `_1_dia` int(255) NOT NULL,
+  `_2_dias` int(255) NOT NULL,
+  `_3_dias` int(255) NOT NULL,
+  `_4_dias` int(255) NOT NULL,
+  `_5_dias` int(255) NOT NULL,
+  `_6_dias` int(255) NOT NULL,
+  `_7_13dias` int(255) NOT NULL,
+  `_14_20dias` int(255) NOT NULL,
+  `_21_27dias` int(255) NOT NULL,
+  `_28_31dias` int(255) NOT NULL,
+  `_2_meses` int(255) NOT NULL,
+  `_3_meses` int(255) NOT NULL,
+  `_4_meses` int(255) NOT NULL,
+  `_5_meses` int(255) NOT NULL,
+  `_6_meses` int(255) NOT NULL,
+  `_7_meses` int(255) NOT NULL,
+  `_8_meses` int(255) NOT NULL,
+  `_9_meses` int(255) NOT NULL,
+  `_10_meses` int(255) NOT NULL,
+  `_11_meses` int(255) NOT NULL
+);
+
+INSERT INTO `mort_faixa_etaria` (`id_city`, `menos24horas`, `_1_dia`, `_2_dias`, `_3_dias`, `_4_dias`, `_5_dias`, `_6_dias`, `_7_13dias`, `_14_20dias`, `_21_27dias`, `_28_31dias`, `_2_meses`, `_3_meses`, `_4_meses`, `_5_meses`, `_6_meses`, `_7_meses`, `_8_meses`, `_9_meses`, `_10_meses`, `_11_meses`) VALUES
+(311460, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0),
+(313040, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(313080, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0),
+(313450, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(313820, 150, 60, 49, 36, 32, 25, 25, 79, 39, 20, 57, 22, 9, 11, 7, 7, 9, 1, 3, 7, 7),
+(313870, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0),
+(314460, 22, 2, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 2, 0, 1, 2, 0, 0, 3, 1, 0),
+(315470, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0);
+
+-- --------------------------------------------------------
+
+CREATE TABLE `mort_gestacao` (
+  `id_city` int(10) PRIMARY KEY NOT NULL,
+  `menos_22semanas` int(255) NOT NULL,
+  `_22_27semanas` int(255) NOT NULL,
+  `_28_31semanas` int(255) NOT NULL,
+  `_32_36semanas` int(255) NOT NULL,
+  `_37_41semanas` int(255) NOT NULL,
+  `mais_42semanas` int(255) NOT NULL,
+  `ignorado` int(255) NOT NULL
+);
+
+INSERT INTO `mort_gestacao` (`id_city`, `menos_22semanas`, `_22_27semanas`, `_28_31semanas`, `_32_36semanas`, `_37_41semanas`, `mais_42semanas`, `ignorado`) VALUES
+(311460, 0, 0, 0, 0, 2, 0, 2),
+(313040, 0, 0, 0, 0, 0, 0, 1),
+(313080, 0, 0, 0, 0, 0, 0, 1),
+(313450, 0, 0, 0, 0, 0, 0, 1),
+(313820, 29, 154, 114, 112, 158, 0, 88),
+(313870, 0, 0, 0, 2, 0, 0, 1),
+(314460, 1, 11, 2, 1, 5, 0, 16),
+(315470, 0, 0, 0, 0, 1, 1, 0);
+
+-- --------------------------------------------------------
+
+CREATE TABLE `mort_idade_mae` (
+  `id_city` int(10) PRIMARY KEY NOT NULL,
+  `_10_14anos` int(255) NOT NULL,
+  `_15_19anos` int(255) NOT NULL,
+  `_20_24anos` int(255) NOT NULL,
+  `_25_29anos` int(255) NOT NULL,
+  `_30_34anos` int(255) NOT NULL,
+  `_35_39anos` int(255) NOT NULL,
+  `_40_44anos` int(255) NOT NULL,
+  `_45_49anos` int(255) NOT NULL,
+  `idade_ignorada` int(255) NOT NULL
+);
+
+INSERT INTO `mort_idade_mae` (`id_city`, `_10_14anos`, `_15_19anos`, `_20_24anos`, `_25_29anos`, `_30_34anos`, `_35_39anos`, `_40_44anos`, `_45_49anos`, `idade_ignorada`) VALUES
+(311460, 0, 0, 0, 0, 0, 1, 0, 0, 3),
+(313040, 0, 0, 0, 0, 0, 0, 0, 0, 1),
+(313080, 0, 0, 0, 0, 0, 0, 0, 0, 1),
+(313450, 0, 0, 0, 0, 0, 0, 0, 0, 1),
+(313820, 2, 102, 128, 139, 104, 61, 27, 2, 90),
+(313870, 0, 1, 0, 0, 1, 0, 0, 0, 1),
+(314460, 0, 1, 5, 2, 2, 1, 2, 0, 23),
+(315470, 1, 0, 0, 1, 0, 0, 0, 0, 0);
+
+-- --------------------------------------------------------
+
+CREATE TABLE `mort_parto` (
+  `id_city` int(10) PRIMARY KEY NOT NULL,
+  `antes_parto` int(255) NOT NULL,
+  `durante_parto` int(255) NOT NULL,
+  `apos_parto` int(255) NOT NULL,
+  `ignorado` int(255) NOT NULL
+);
+
+INSERT INTO `mort_parto` (`id_city`, `antes_parto`, `durante_parto`, `apos_parto`, `ignorado`) VALUES
+(311460, 0, 1, 1, 2),
+(313040, 0, 0, 0, 1),
+(313080, 0, 0, 0, 1),
+(313450, 0, 0, 0, 1),
+(313820, 2, 4, 557, 92),
+(313870, 0, 0, 1, 2),
+(314460, 1, 0, 20, 15),
+(315470, 0, 0, 2, 0);
+
+-- --------------------------------------------------------
+
+CREATE TABLE `mort_peso` (
+  `id_city` int(10) PRIMARY KEY NOT NULL,
+  `meno_de_500g` int(255) NOT NULL,
+  `_500_a_999g` int(255) NOT NULL,
+  `_1000_a_1499g` int(255) NOT NULL,
+  `_1500_a_2499g` int(255) NOT NULL,
+  `_2500_a_2999g` int(255) NOT NULL,
+  `_3000_a_3999g` int(255) NOT NULL,
+  `_4000g_e_mais` int(255) NOT NULL,
+  `ignorado` int(255) NOT NULL
+);
+
+INSERT INTO `mort_peso` (`id_city`, `meno_de_500g`, `_500_a_999g`, `_1000_a_1499g`, `_1500_a_2499g`, `_2500_a_2999g`, `_3000_a_3999g`, `_4000g_e_mais`, `ignorado`) VALUES
+(311460, 0, 0, 0, 0, 0, 0, 0, 4),
+(313040, 0, 0, 0, 0, 0, 0, 0, 1),
+(313080, 0, 0, 0, 0, 0, 0, 0, 1),
+(313450, 0, 0, 0, 0, 0, 0, 0, 1),
+(313820, 31, 165, 112, 106, 63, 71, 4, 103),
+(313870, 0, 0, 0, 1, 0, 0, 0, 2),
+(314460, 1, 7, 1, 2, 1, 3, 0, 21),
+(315470, 0, 0, 0, 0, 0, 1, 0, 1);
+
+-- --------------------------------------------------------
+
+CREATE TABLE `mort_inf_sexo` (
+  `id_city` int(10) PRIMARY KEY NOT NULL,
+  `masc` int(255) NOT NULL,
+  `fem` int(255) NOT NULL
+);
+
+INSERT INTO `mort_inf_sexo` (`id_city`, `masc`, `fem`) VALUES
+(311460, 2, 2),
+(313040, 1, 0),
+(313080, 0, 1),
+(313450, 0, 1),
+(313820, 376, 279),
+(313870, 1, 2),
+(314460, 19, 17),
+(315470, 2, 0);
+
+-- --------------------------------------------------------
+
+CREATE TABLE `mort_tipo_gravidez` (
+  `id_city` int(10) PRIMARY KEY NOT NULL,
+  `unica` int(255) NOT NULL,
+  `dupla` int(255) NOT NULL,
+  `tres_mais` int(255) NOT NULL,
+  `ignorado` int(255) NOT NULL
+);
+
+INSERT INTO `mort_tipo_gravidez` (`id_city`, `unica`, `dupla`, `tres_mais`, `ignorado`) VALUES
+(311460, 2, 0, 0, 2),
+(313040, 0, 0, 0, 1),
+(313080, 0, 0, 0, 1),
+(313450, 0, 0, 0, 1),
+(313820, 515, 63, 2, 75),
+(313870, 2, 0, 0, 1),
+(314460, 15, 6, 0, 15),
+(315470, 2, 0, 0, 0);
+
+-- --------------------------------------------------------
+
+CREATE TABLE `mort_tipo_parto` (
+  `id_city` int(10) PRIMARY KEY NOT NULL,
+  `vaginal` int(255) NOT NULL,
+  `cesaria` int(255) NOT NULL,
+  `ignorado` int(255) NOT NULL
+);
+
+INSERT INTO `mort_tipo_parto` (`id_city`, `vaginal`, `cesaria`, `ignorado`) VALUES
+(311460, 1, 0, 3),
+(313040, 0, 0, 1),
+(313080, 0, 0, 1),
+(313450, 0, 0, 1),
+(313820, 262, 314, 79),
+(313870, 1, 0, 2),
+(314460, 16, 6, 14),
+(315470, 1, 1, 0);
+
+-- --------------------------------------------------------
+
+CREATE TABLE `obito_investigado` (
+  `id_city` int(10) PRIMARY KEY NOT NULL,
+  `obito_invest_informada` int(255) NOT NULL,
+  `obito_invest_nao_informada` int(255) NOT NULL,
+  `obito_nao_invest` int(255) NOT NULL,
+  `nao_se_aplica` int(255) NOT NULL
+);
+
+INSERT INTO `obito_investigado` (`id_city`, `obito_invest_informada`, `obito_invest_nao_informada`, `obito_nao_invest`, `nao_se_aplica`) VALUES
+(311460, 1, 0, 0, 3),
+(313040, 0, 0, 0, 1),
+(313080, 0, 0, 0, 1),
+(313450, 0, 0, 0, 1),
+(313820, 292, 18, 127, 218),
+(313870, 0, 0, 0, 3),
+(314460, 10, 3, 5, 18),
+(315470, 0, 0, 1, 1);
+

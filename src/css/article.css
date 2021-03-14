@@ -65,6 +65,7 @@ section {
 .text-content {
   font-size: 1.6rem;
   text-align: justify;
+  word-wrap: break-word;
   margin: 1rem 10rem 0 10rem;
 }
 
@@ -114,7 +115,7 @@ section {
   }
 }
 
-@media (max-width: 449px) {
+@media (max-width: 470px) {
   .sec-title {
     margin: 0 3rem 2rem 3rem;
     text-transform: uppercase;
