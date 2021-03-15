@@ -53,7 +53,6 @@ function tableRender($connection, $current_city, $tableName, $attrNames) {
                 echo "
                         </tr>
                     </tbody>
-                </table>
                 ";
             }
         }

@@ -17,13 +17,17 @@
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span><i class="fa fa-navicon"></i></span>
+        <span>
+          <img src="../../../assets/icons/menu_white_24dp.svg" alt="Menu">
+        </span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbar-links">
-        <a href="#cities" class="nav-options">Municípios</a>
-        <a href="#about" class="nav-options">Sobre</a>
-        <a href="#feedback" class="nav-options">Feedback</a>
+        <ul class="navOptionsList">
+          <li><a href="#cities" class="nav-options">Municípios</a></li>
+          <li><a href="#about" class="nav-options">Sobre</a></li>
+          <li><a href="#feedback" class="nav-options">Feedback</a></li>
+        </ul>
       </div>
     </nav>
   </div>

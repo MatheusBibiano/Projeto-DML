@@ -9,21 +9,16 @@ function categoryRender($connection, $category, $tablesTitles) {
         echo "
             <div class='table-container'>
                 <h3 class='table-container-title'>".$tablesTitles[$iterator]."</h3>
-                <table class='table'>
+                <table class='table table-responsive'>
         ";
 
         tableRender($connection, $current_city, $tableName, $attrNames);
-        $iterator++;
-
+        
         echo "
+                </table>
             </div>
         ";
+
+        $iterator++;
     }
 }
-
-
-
-
-
-
-

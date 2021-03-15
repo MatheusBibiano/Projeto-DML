@@ -51,7 +51,10 @@
           maxlength="127"
           required
         ></textarea>
-        <button type="submit" id="submit">Enviar</button>
+        <button type="submit" class="submit">
+          <div class="submitText">Enviar</div>
+          <img src="../../../assets/icons/send_white_24dp.svg" class="sendIcon">
+        </button>
       </form>
   </section>
 </article>

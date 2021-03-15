@@ -19,7 +19,7 @@ $mortInfTablesHeader = array(
 
     "mort_causas_indefinidas" => array("id", "sintomas anormais", "afccões perinatal", "total"),
 
-    "mort_escolaridade_mae" => array("id", "nenhuma", "1-3 anos", "4-7 anos", "8-11 anos", "12 anos/mais", "ignorado","total"),
+    "mort_escolaridade_mae" => array("id", "nenhuma", "1-3 anos", "4-7 anos", "8-11 anos", "12 anos|mais", "ignorado", "total"),
 
     "mort_faixa_etaria" => array("id", "menos de 24 horas", "1 dia", "2 dias", "3 dias", "4 dias", "5 dias", "6 dias", "7-13 dias", "14-20 dias", "21-27 dias", "28-31 dias", "2 meses", "3 meses", "4 meses", "5 meses", "6 meses", "7 meses", "8 meses", "9 meses", "10 meses", "11 meses", "total"),
 
@@ -29,11 +29,11 @@ $mortInfTablesHeader = array(
 
     "mort_parto" => array("id", "antes", "durante", "após", "ignorado", "total"),
 
-    "mort_peso" => array("id", "meno de 500g", "500-999g", "1000-1499g", "1500-2499g", "2500-2999g", "3000-3999g", "4000g/mais", "ignorado", "total"),
+    "mort_peso" => array("id", "meno de 500g", "500-999g", "1000-1499g", "1500-2499g", "2500-2999g", "3000-3999g", "4000g|mais", "ignorado", "total"),
 
     "mort_inf_sexo" => array("id", "masculino", "feminino", "total"),
 
-    "mort_tipo_gravidez" => array("id", "unica", "dupla", "tres/mais", "ignorado", "total"),
+    "mort_tipo_gravidez" => array("id", "unica", "dupla", "tres|mais", "ignorado", "total"),
 
     "mort_tipo_parto" => array("id", "vaginal", "cesária", "ignorado", "total"),
 

@@ -35,6 +35,7 @@ article {
 .table th {
   font-size: 1.4rem;
   text-align: center;
+  width: 100%;
 }
 
 .table th {
