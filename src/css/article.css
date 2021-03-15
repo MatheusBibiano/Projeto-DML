@@ -207,3 +207,15 @@ section {
     font-size: 2rem;
   }
 }
+
+@media (max-width: 375px) {
+  .text-content {
+    margin: 1rem 3rem 0 3rem;
+  }
+}
+
+@media (max-width: 320px) {
+  #feedback-field {
+    max-width: 70vw;
+  }
+}
