@@ -18,7 +18,8 @@
         aria-label="Toggle navigation"
       >
         <span>
-          <img src="../../../assets/icons/menu_white_24dp.svg" alt="Menu">
+          <img src="../../../assets/icons/menu_white_24dp.svg" id="default" alt="Menu">
+          <img src="../../../assets/icons/close_white_24dp.svg" id="close" alt="Menu">
         </span>
       </button>
 

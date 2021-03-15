@@ -33,7 +33,6 @@
   font-size: 1.6rem;
   color: #fff;
   margin: 0 2rem 0 2rem;
-  transition: 0.2s;
 }
 
 .nav-options:hover {
@@ -73,16 +72,22 @@
 }
 
 @media (max-width: 991px) {
+  #navbar-links {
+    border-top: solid 2px rgba(0, 0, 0, 0.1);
+    padding-top: 1rem;
+    margin-top: 1rem;
+  }
+
   .cityHeader {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding: 2rem 0 2rem 0;
+    padding: 2rem 0 1rem 0;
   }
 
   .cityTitle {
-    padding: 0 0 1rem 0;
+    padding: 0 0 .8rem 0;
   }
 
   .cityMenuButton {
@@ -93,12 +98,20 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     margin: 0 1rem 0 1rem;
   }
 
   .navOptionsList > li {
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+  }
+
+  .navOptionsList > li > a {
+    flex: 1;
+    font-size: 1.8rem;
+    color: #fff;
     padding: 1rem;
     text-align: center;
     margin: 0.5rem 0 0.5rem 0;
@@ -108,13 +121,6 @@
     box-shadow: 0.5rem 0 0.5rem rgba(0, 0, 0, 0.05),
       -0.5rem -0.5rem 0.5rem rgba(0, 0, 0, 0.05);
     text-shadow: 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.5);
-  }
-
-  .navOptionsList > li > a {
-    padding: 1rem;
-    font-size: 1.8rem;
-    color: #fff;
-    margin: 0 2rem 0 2rem;
   }
 
   .navOptionsList > li > a:hover {
@@ -149,10 +155,6 @@
 
   .nav-options {
     font-size: 2rem;
-  }
-
-  #navbar-links {
-    margin-top: 3rem;
   }
 }
 

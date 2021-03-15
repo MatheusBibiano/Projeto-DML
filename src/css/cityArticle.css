@@ -4,6 +4,7 @@ article {
 
 .tables-section {
   padding: 5rem;
+  margin-bottom: 10rem;
 }
 
 .tables-section-title {
@@ -40,4 +41,22 @@ article {
 
 .table th {
   text-transform: uppercase;
+}
+
+@media (max-width: 991px) {
+  article {
+    margin-top: 10rem;
+  }
+
+  .tables-section {
+    padding: 0;
+  }
+
+  .table-container {
+    margin: 4rem 3rem 4rem 3rem;
+  }
+
+  .tables-section-title {
+    margin: 0 3rem 2rem 3rem;
+  }
 }

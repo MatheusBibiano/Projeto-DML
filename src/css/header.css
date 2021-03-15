@@ -47,7 +47,6 @@
   font-size: 1.6rem;
   color: #fff;
   margin: 0 2rem 0 2rem;
-  transition: 0.2s;
 }
 
 .nav-options:hover {
@@ -91,19 +90,30 @@
 @media (max-width: 991px) {
   #navbar-links {
     align-self: stretch;
+    border-top: solid 2px rgba(0, 0, 0, 0.1);
+    padding-top: 1rem;
+    margin-top: 1rem;
   }
 
   .navOptionsList {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     margin-left: 1rem;
     margin-right: 1rem; 
   }
 
   .navOptionsList > li {
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navOptionsList > li > a {
+    color: #fff;
+    flex: 1;
+    font-size: 1.8rem;
     padding: 1rem;
     text-align: center;
     margin: .5rem 0 .5rem 0;
@@ -115,17 +125,14 @@
     text-shadow: .3rem .3rem 1rem rgba(0, 0, 0, 0.5);
   }
 
-  .navOptionsList > li > a {
-    padding: 1rem;
-    font-size: 1.8rem;
-    color: #fff;
-    margin: 0 2rem 0 2rem;
-  }
-
   .navOptionsList > li > a:hover {
     background-color: #1c89c9;
     border-radius: 0;
     box-shadow: none;
+  }
+
+  .navOptionsList > li > a:active {
+    filter: brightness(0.9);
   }
 }
 
@@ -171,10 +178,6 @@
 
   .nav-options {
     font-size: 2rem;
-  }
-
-  #navbar-links {
-    margin-top: 3rem;
   }
 }
 
