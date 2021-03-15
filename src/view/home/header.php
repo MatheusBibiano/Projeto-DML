@@ -1,6 +1,6 @@
 <header>
   <div id="nav-container">
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg homeHeader">
       <div class="logo-container">
         <a href="http://www.nepomuceno.cefetmg.br/" target="_blank">
           <img src="../../../assets/img/logo.png" alt="Logo CEFET" class="logo" />
@@ -9,7 +9,7 @@
       </div>
 
       <button
-        class="navbar-toggler"
+        class="navbar-toggler homeMenuButton"
         type="button"
         data-toggle="collapse"
         data-target="#navbar-links"
