@@ -56,6 +56,13 @@ function tableRender($connection, $current_city, $tableName, $attrNames) {
                 ";
             }
         }
+
+    } else {
+        echo "
+            <div class='emptyContainer'>
+                <span class='emptyMsg'>Dados não fornecidos</span>
+            </div>
+        ";
     }
 }
 
