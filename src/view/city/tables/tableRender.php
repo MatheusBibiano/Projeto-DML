@@ -2,12 +2,13 @@
 
 function tableRender($connection, $current_city, $tableName, $attrNames) {
     $sql = "SELECT * FROM $tableName WHERE id_city='$current_city'";
+    $dbError = false;
 
     try {
         $stmt = $connection->prepare($sql);
         $stmt->execute();
     } catch(PDOException $err) {
-        echo "ERRO: ".$err->getMessage();
+        $dbError = true;
     }
 
     if ($stmt->rowCount() > 0) {
@@ -24,7 +25,7 @@ function tableRender($connection, $current_city, $tableName, $attrNames) {
                 $stmt = $connection->prepare($sql);
                 $stmt->execute();
             } catch(PDOException $err) {
-                echo "ERRO: ".$err->getMessage();
+                $dbError = true;
             }
 
             if ($stmt->rowCount() > 0) {
@@ -58,11 +59,20 @@ function tableRender($connection, $current_city, $tableName, $attrNames) {
         }
 
     } else {
-        echo "
-            <div class='emptyContainer'>
-                <span class='emptyMsg'>Dados não fornecidos</span>
-            </div>
-        ";
+        if (!$dbError) {
+            echo "
+                <div class='emptyContainer'>
+                    <span class='emptyMsg'>Dados não fornecidos</span>
+                </div>
+            ";
+
+        } else {
+            echo "
+                <div class='emptyContainer'>
+                    <span class='emptyMsg'>Erro com o banco de dados</span>
+                </div>
+            ";
+        }
     }
 }
 

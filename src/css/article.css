@@ -27,7 +27,7 @@ section {
   margin: 0.5rem;
   box-shadow: 0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.08),
     -0.5rem -0.5rem 2rem rgba(0, 0, 0, 0.08);
-  transition: .25s;
+  transition: .20s;
 }
 
 .grid-item:hover {

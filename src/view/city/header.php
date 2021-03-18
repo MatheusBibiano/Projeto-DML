@@ -32,10 +32,12 @@
 
       <div class="collapse navbar-collapse" id="navbar-links">
         <ul class="navOptionsList">
-          <li><a href="../home/index.php" class="nav-options">Home</a></li>
+          <li><a href="../home/index.php" class="nav-options">Início</a></li>
           <li><a href="#cityMap" class="nav-options">Mapa</a></li>
           <li><a href="#mort" class="nav-options">Mortalidade</a></li>
           <li><a href="#mortInf" class="nav-options">Mort. Infantil</a></li>
+          <li><a href="#fecun" class="nav-options">Fecundidade</a></li>
+          <li><a href="#nat" class="nav-options">Natalidade</a></li>
         </ul>
       </div>
     </nav>

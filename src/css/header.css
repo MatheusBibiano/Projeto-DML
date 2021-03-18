@@ -47,6 +47,7 @@
   font-size: 1.6rem;
   color: #fff;
   margin: 0 2rem 0 2rem;
+  transition: .20s;
 }
 
 .nav-options:hover {

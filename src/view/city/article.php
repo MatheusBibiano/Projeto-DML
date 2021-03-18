@@ -49,4 +49,22 @@
             }
         ?>
     </section>
+
+    <section id="fecun" class="tables-section">
+        <h2 class="tables-section-title">Fecundidade</h2>
+        <?php 
+            if (isset($connection)) {
+                categoryRender($connection, $fecunTablesHeader, $fecunTablesTitles);
+            }
+        ?>
+    </section>
+
+    <section id="nat" class="tables-section">
+        <h2 class="tables-section-title">Natalidade</h2>
+        <?php 
+            if (isset($connection)) {
+                categoryRender($connection, $natTablesHeader, $natTablesTitles);
+            }
+        ?>
+    </section>
 </article>
