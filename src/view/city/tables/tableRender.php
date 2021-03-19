@@ -29,32 +29,27 @@ function tableRender($connection, $current_city, $tableName, $attrNames) {
             }
 
             if ($stmt->rowCount() > 0) {
+                
                 echo "
-                <thead class='thead-dark'>
-                    <tr>
-                ";
-
-                for ($i = 0; $i < count($attrNames); $i++) {
-                    echo "<th scope='col'>".$attrNames[$i]."</th>";            
-                }
-
-                echo "
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope='row'>$current_city</th>
+                    <div class='tableColumns'>
+                        <h3 class='tableHeader'>id</h3>
+                        <span class='tableContent'>
+                            <strong>$current_city</strong>
+                        </span>
+                    </div>
                 ";
 
                 $city = $stmt->fetch(PDO::FETCH_ASSOC);
+                $iterator = 0;
                 foreach ($city as $key => $value) {
-                    echo "<td>".$value."</td>";
+                    echo "
+                        <div class='tableColumns'>
+                            <h3 class='tableHeader'>".$attrNames[$iterator]."</h3>           
+                            <span class='tableContent'>".$value."</span>
+                        </div>
+                    ";
+                    $iterator++;
                 }
-
-                echo "
-                        </tr>
-                    </tbody>
-                ";
             }
         }
 

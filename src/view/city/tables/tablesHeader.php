@@ -2,7 +2,6 @@
 
 $mortTablesHeader = array(
     "mortallocalocorrencia" => array(
-        "id",
         "hospital",
         "outros estabelecimentos públicos",
         "domicílio",
@@ -13,7 +12,6 @@ $mortTablesHeader = array(
     ),
 
     "mortano" => array(
-        "id",
         "2000",
         "2001",
         "2002",
@@ -37,7 +35,6 @@ $mortTablesHeader = array(
     ),
 
     "mortestadocivil" => array(
-        "id",
         "solteiro",
         "casado",
         "viúvo",
@@ -48,7 +45,6 @@ $mortTablesHeader = array(
     ),
 
     "mortidade" => array(
-        "id",
         "menor 1 ano",
         "1-4 anos",
         "5-9 anos",
@@ -65,7 +61,6 @@ $mortTablesHeader = array(
     ),
 
     "mortind" => array(
-        "id",
         "sintomas anormais",
         "doença sis. circulatório",
         "doença sis. respiratório",
@@ -74,14 +69,12 @@ $mortTablesHeader = array(
     ),
 
     "mortsexo" => array(
-        "id",
         "masculino",
         "feminino",
         "total"
     ),
 
     "mort_raca" => array(
-        "id",
         "branca",
         "preta",
         "amarela",
@@ -94,7 +87,6 @@ $mortTablesHeader = array(
 
 $mortInfTablesHeader = array(
     "mort_inf_ano" => array(
-        "id",
         "2000",
         "2001",
         "2002",
@@ -118,14 +110,12 @@ $mortInfTablesHeader = array(
     ),
 
     "mort_causas_indefinidas" => array(
-        "id",
         "sintomas anormais",
         "afccões perinatal",
         "total"
     ),
 
     "mort_escolaridade_mae" => array(
-        "id",
         "nenhuma",
         "1-3 anos",
         "4-7 anos",
@@ -136,7 +126,6 @@ $mortInfTablesHeader = array(
     ),
 
     "mort_faixa_etaria" => array(
-        "id",
         "menos de 24 horas",
         "1 dia",
         "2 dias",
@@ -162,7 +151,6 @@ $mortInfTablesHeader = array(
     ),
 
     "mort_gestacao" => array(
-        "id",
         "menos 22 semanas",
         "22-27 semanas",
         "28-31 semanas",
@@ -174,7 +162,6 @@ $mortInfTablesHeader = array(
     ),
 
     "mort_idade_mae" => array(
-        "id",
         "10-14 anos",
         "15-19 anos",
         "20-24 anos",
@@ -188,7 +175,6 @@ $mortInfTablesHeader = array(
     ),
 
     "mort_parto" => array(
-        "id",
         "antes",
         "durante",
         "após",
@@ -197,7 +183,6 @@ $mortInfTablesHeader = array(
     ),
 
     "mort_peso" => array(
-        "id",
         "meno de 500g",
         "500-999g",
         "1000-1499g",
@@ -210,14 +195,12 @@ $mortInfTablesHeader = array(
     ),
 
     "mort_inf_sexo" => array(
-        "id",
         "masculino",
         "feminino",
         "total"
     ),
 
     "mort_tipo_gravidez" => array(
-        "id",
         "unica",
         "dupla",
         "tres|mais",
@@ -226,7 +209,6 @@ $mortInfTablesHeader = array(
     ),
 
     "mort_tipo_parto" => array(
-        "id",
         "vaginal",
         "cesária",
         "ignorado",
@@ -234,7 +216,6 @@ $mortInfTablesHeader = array(
     ),
 
     "obito_investigado" => array(
-        "id",
         "informado",
         "não informado",
         "não investigado",
@@ -245,7 +226,6 @@ $mortInfTablesHeader = array(
 
 $fecunTablesHeader = array(
     "fecun_escolaridade_mae" => array(
-        "id",
         "fundamental incompleto",
         "fundamental completo",
         "médio completo",
@@ -255,7 +235,6 @@ $fecunTablesHeader = array(
     ),
 
     "fecun_estado_civil" => array(
-        "id",
         "casada",
         "separada judicial",
         "viúva",
@@ -267,7 +246,6 @@ $fecunTablesHeader = array(
 
 $natTablesHeader = array(
     "nat_ano" => array(
-        "id",
         "2000",
         "2001",
         "2002",
@@ -291,7 +269,6 @@ $natTablesHeader = array(
     ),
 
     "nat_anomalia" => array(
-        "id",
         "sim",
         "não",
         "não ignorado",
@@ -300,7 +277,6 @@ $natTablesHeader = array(
     ),
 
     "nat_escolaridade_mae" => array(
-        "id",
         "nenhuma",
         "1-3 anos",
         "4-7 anos",
@@ -311,7 +287,6 @@ $natTablesHeader = array(
     ),
 
     "nat_estadocivil_mae" => array(
-        "id",
         "solteira",
         "casada",
         "viúva",
@@ -322,7 +297,6 @@ $natTablesHeader = array(
     ),
 
     "nat_idade_mae" => array(
-        "id",
         "10-14 anos",
         "15-19 anos",
         "20-24 anos",
@@ -336,7 +310,6 @@ $natTablesHeader = array(
     ),
 
     "nat_local_ocorrencia" => array(
-        "id",
         "hospital",
         "outro estabelecimento de saúde",
         "domicílio",
@@ -345,7 +318,6 @@ $natTablesHeader = array(
     ),
 
     "nat_raca" => array(
-        "id",
         "branca",
         "preta",
         "amarela",
@@ -356,14 +328,12 @@ $natTablesHeader = array(
     ),
 
     "nat_sexo" => array(
-        "id",
         "masculino",
         "feminino",
         "total"
     ),
 
     "nat_tipo_gravidez" => array(
-        "id",
         "única",
         "dupla",
         "3|mais",
@@ -372,7 +342,6 @@ $natTablesHeader = array(
     ),
 
     "nat_tipo_parto" => array(
-        "id",
         "vaginal",
         "cesário",
         "ignorado",
