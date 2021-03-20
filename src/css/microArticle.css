@@ -1,0 +1,19 @@
+.mapsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrowButton {
+    border: none;
+    margin: 1rem;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.arrowButtonIcon {
+    object-fit: cover;
+    width: 5rem;
+    height: 5rem;
+}

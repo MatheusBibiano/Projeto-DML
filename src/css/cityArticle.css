@@ -30,7 +30,7 @@ article {
   border-bottom: 0;
 }
 
-.table {
+.MyTable {
   margin: 0;
   display: flex;
   flex-direction: row;

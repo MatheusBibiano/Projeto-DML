@@ -13,12 +13,12 @@ function tableRender($connection, $current_city, $tableName, $attrNames) {
 
     if ($stmt->rowCount() > 0) {
         while ($city = $stmt->fetch(PDO::FETCH_ASSOC)) {
-            $atributes = array_keys($city);
-            array_shift($atributes);
-            $sumAtributes = implode('+', $atributes);
-            $atributes = implode(',', $atributes);
+            $attributes = array_keys($city);
+            array_shift($attributes);
+            $sumAtributes = implode('+', $attributes);
+            $attributes = implode(',', $attributes);
 
-            $sql = "SELECT $atributes, SUM($sumAtributes) AS total 
+            $sql = "SELECT $attributes, SUM($sumAtributes) AS total 
                     FROM $tableName WHERE id_city='$current_city'";
 
             try {

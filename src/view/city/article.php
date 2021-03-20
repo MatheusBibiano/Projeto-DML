@@ -1,6 +1,8 @@
-<?php require_once "./tables/dynamicTable.php"; ?>
-<?php require_once "./tables/tablesTitles.php"; ?>
-<?php require_once "./tables/tablesHeader.php"; ?>
+<?php 
+    require_once "./tables/dynamicTable.php";
+    require_once "./tables/tablesTitles.php";
+    require_once "./tables/tablesHeader.php";
+?>
 
 <article>
     <section id="cityMap" class="map-section">

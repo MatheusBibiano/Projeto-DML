@@ -3,22 +3,22 @@
 require_once "./tables/tableRender.php";
 
 function categoryRender($connection, $tablesHead, $tablesTitle) {
-    $current_city = $_SESSION['current_city'];
     $iterator = 0;
     foreach ($tablesHead as $tableName => $attrNames) {
         echo "
             <div class='table-container'>
                 <h3 class='table-container-title'>".$tablesTitle[$iterator]."</h3>
-                <div class='MyTable'>
+                <table class='table table-striped'>
         ";
 
-        tableRender($connection, $current_city, $tableName, $attrNames);
+        tableRender($connection, $tableName, $attrNames);
         
         echo "
-                </div>
+                </table>
             </div>
         ";
 
         $iterator++;
     }
 }
+
