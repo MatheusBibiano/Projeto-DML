@@ -17,3 +17,29 @@
     width: 5rem;
     height: 5rem;
 }
+
+.table {
+    margin: 0;
+}
+
+.table th {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: normal;
+}
+
+.table td {
+    font-size: 1.4rem;
+    text-align: center; 
+}
+
+@media (max-width: 500px) {
+    .table th {
+        font-size: 1.6rem;
+    }
+    
+    .table td {
+        font-size: 1.6rem;
+    }
+}

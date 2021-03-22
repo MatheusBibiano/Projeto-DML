@@ -8,13 +8,15 @@ function categoryRender($connection, $tablesHead, $tablesTitle) {
         echo "
             <div class='table-container'>
                 <h3 class='table-container-title'>".$tablesTitle[$iterator]."</h3>
-                <table class='table table-striped'>
+                <div class='table-responsive'>
+                    <table class='table table-striped table-bordered'>
         ";
 
         tableRender($connection, $tableName, $attrNames);
         
         echo "
-                </table>
+                    </table>
+                </div>
             </div>
         ";
 
