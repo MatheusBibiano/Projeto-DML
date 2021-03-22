@@ -18,8 +18,14 @@
                 try {
                     $stmt = $connection->prepare($sql);
                     $stmt->execute();
+                    
                 } catch(PDOException $err) {
-                    echo "ERRO: ".$err->getMessage();
+                    echo "
+                        <script>
+                            alert('Desculpe! Houve um erro.');
+                            window.location.href = '../home/index.php';
+                        </script>
+                    ";
                 }
                 
                 if ($stmt->rowCount() > 0) {
@@ -28,7 +34,22 @@
                             <iframe src='".$city['location']."' allowfullscreen='' loading='lazy'></iframe>
                         ";
                     }
+                } else {
+                    echo "
+                        <script>
+                            alert('Desculpe! Houve um erro.');
+                            window.location.href = '../home/index.php';
+                        </script>
+                    ";
                 }
+                
+            } else {
+                echo "
+                    <script>
+                        alert('Desculpe! Houve um erro.');
+                        window.location.href = '../home/index.php';
+                    </script>
+                ";
             }
 
         ?>

@@ -15,8 +15,19 @@
         $sql = "SELECT id_city, city_name, image FROM city";
         $stmt = $connection->prepare($sql);
         $stmt->execute();
+
       } catch(PDOException $err) {
-        echo "ERRO: ".$err->getMessage();
+        echo "
+          <div>
+            <h1 style='
+              color: crimson;
+              padding: 7rem 5rem 0 5rem;
+              '
+            >
+              Ocorreu um erro!
+            </h1>
+          </div>
+        ";
       }
 
       if($stmt->rowCount() > 0)
@@ -33,6 +44,18 @@
             </form>
           ";
         }
+      } else {
+        echo "
+          <div>
+            <h1 style='
+              color: crimson;
+              padding: 7rem 5rem 0 5rem;
+              '
+            >
+              Erro ao carregar!
+            </h1>
+          </div>
+        ";
       }
 
       ?>

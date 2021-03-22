@@ -11,6 +11,13 @@
         echo "
             <h1 class='cityTitle'>" . $city_name . "</h1>
           ";
+      } else {
+        echo "
+          <script>
+              alert('Desculpe! Houve um erro.');
+              window.location.href = '../home/index.php';
+          </script>
+        ";
       }
 
       ?>
