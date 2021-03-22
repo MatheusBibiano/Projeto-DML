@@ -1,5 +1,9 @@
 <?php
 
+if(!isset($_SESSION['current_city'])) {
+    header("location: ../../home/index.php");
+}
+
 require_once "./tables/tableRender.php";
 
 function categoryRender($connection, $tablesHead, $tablesTitle) {
@@ -22,3 +26,5 @@ function categoryRender($connection, $tablesHead, $tablesTitle) {
         $iterator++;
     }
 }
+
+?>

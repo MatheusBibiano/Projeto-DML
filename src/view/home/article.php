@@ -48,7 +48,7 @@
 
   <section id="feedback">
       <h2 class="sec-title">Feedback</h2>
-      <form action="../../receive_feedback.php" method="post" class="feedback-container">
+      <form action="./index.php" method="post" class="feedback-container">
         <label for='feedback' id="msg">Avalie nosso site, envie sugestões e críticas para que possamos melhora sua experiência:</label>
         <textarea 
           name="feedback" 

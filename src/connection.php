@@ -10,5 +10,8 @@ try {
 	$connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 } catch(PDOException $err) {
-	die("Conexão falhou: ".$err->getMessage());
+	header("location: ../../dbError.php");
+	die();
 }
+
+?>

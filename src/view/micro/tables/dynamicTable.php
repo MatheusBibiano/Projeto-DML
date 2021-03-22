@@ -1,5 +1,9 @@
 <?php
 
+if(!isset($_SESSION["session_started"])) {
+    header("location: ../../home/index.php");
+}
+
 require_once "./tables/tableRender.php";
 
 function categoryRender($connection, $tablesHead, $tablesTitle) {

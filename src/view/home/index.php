@@ -25,6 +25,7 @@
       require_once "./header.php";
       require_once "./article.php";
       require_once "./footer.php";
+      require_once "./receive_feedback.php";
       $connection = null;
     ?>
 

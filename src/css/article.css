@@ -83,6 +83,7 @@ section {
   word-wrap: break-word;
   margin: 0 11rem 0 11rem;
   text-align: justify;
+  cursor: text;
 }
 
 #feedback-field {
@@ -115,7 +116,7 @@ section {
 }
 
 .submitText {
-  margin: .3rem;
+  margin: .6rem .3rem .3rem .3rem;
 }
 
 .sendIcon {

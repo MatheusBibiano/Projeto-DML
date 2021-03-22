@@ -15,6 +15,7 @@
 
   <?php
   session_start();
+  $_SESSION["session_started"] = true;
   require_once "../../connection.php";
   require_once "./header.php";
   require_once "./article.php";

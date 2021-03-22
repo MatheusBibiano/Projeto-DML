@@ -1,3 +1,8 @@
+<?php 
+  if(!$_POST) {
+    header("location: ../home/index.php");
+  }
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 

@@ -1,5 +1,9 @@
 <?php 
 
+if(!isset($_SESSION['current_city'])) {
+    header("location: ../../home/index.php");
+}
+
 function tableRender($connection, $current_city, $tableName, $attrNames) {
     $sql = "SELECT * FROM $tableName WHERE id_city='$current_city'";
     $dbError = false;
