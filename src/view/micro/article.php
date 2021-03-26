@@ -5,6 +5,17 @@
 ?>
 
 <article>
+    <section id="intro" class="intro-section">
+        <h2 class="intro-section-title">Introdução</h2>
+        <p class="dynamicContent">
+            A microrregião de Lavras apresenta 9 cidades, Carrancas, Ingaí, Itumirim, Ijaci, Itutinga, Lavras, Luminárias, Nepomuceno e Ribeirão Vermelho, da mesorregião campo das vertentes. Dentre essas cidades, Lavras e Nepomuceno são as maiores. São apresentados detalhes importantes que podem ser observados nas taxas e índices como a fecundidade, casamentos, natalidade, mortalidade e mortalidade infantil e como esses dados demográficos podem ser alterados ao longo dos anos em relação ao fator socioeconômico de uma cidade, como por exemplo a chegada da UFLA em Lavras, ou o CEFET em Nepomuceno, além de crescimentos na saúde e educação. Os dados a seguir são relativos à microrregião.
+        </p>
+        <p class="alert">
+            Os dados que foram recolhidos são de bases de saúde do município e do IBGE, dito isso, alguns municípios não apresentam dados de certas taxas tanto quanto alguns valores.
+        </p>
+    </section>
+
+
     <section id="microMap" class="map-section">
         <h2 class="map-section-title">Mapa | Microrregião</h2>
         <div class="mapsContainer">

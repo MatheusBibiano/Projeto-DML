@@ -21,6 +21,7 @@
       <div class="collapse navbar-collapse" id="navbar-links">
         <ul class="navOptionsList">
           <li><a href="../home/index.php" class="nav-options">Início</a></li>
+          <li><a href="#intro" class="nav-options">Introdução</a></li>
           <li><a href="#microMap" class="nav-options">Mapa</a></li>
           <li><a href="#casam" class="nav-options">Casamento</a></li>
           <li><a href="#fecun" class="nav-options">Fecundidade</a></li>

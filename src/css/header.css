@@ -68,6 +68,12 @@
   margin: 1rem 2rem 1rem 1rem;
 }
 
+@media (max-width: 1220px) {
+  .title {
+    margin-left: 2.5rem;
+  }
+}
+
 @media (max-width: 1080px) {
   :root {
     font-size: 58%;
@@ -170,11 +176,10 @@
 
   .logo {
     margin: 0;
-    margin-bottom: 3rem;
   }
 
   .title {
-    margin: 0 1rem 0 1rem;
+    margin: 0 1rem 3rem 1rem;
   }
 
   .nav-options {

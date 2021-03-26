@@ -2,6 +2,38 @@ article {
   margin-top: 15rem;
 }
 
+/* INTRO STYLES */
+
+.intro-section {
+  padding: 5rem 10rem 5rem 10rem;
+}
+
+.intro-section-title {
+  padding: 1rem;
+  border-bottom: solid 2px rgb(28, 137, 201);
+  font-size: 2rem;
+  margin-bottom: 5rem;
+  text-transform: uppercase;
+}
+
+.dynamicContent {
+  font-size: 1.8rem;
+  text-align: justify;
+  word-wrap: break-word;
+  margin: 0 7rem 1rem 7rem;
+}
+
+.alert {
+  padding: 0;
+  font-weight: bold;
+  font-size: 1.8rem;
+  text-align: justify;
+  word-wrap: break-word;
+  margin: 0 7rem 0 7rem;
+}
+
+/* TABLE STYLES */
+
 .tables-section {
   padding: 5rem;
 }
@@ -73,6 +105,8 @@ article {
   padding: 1rem .5rem 1rem .5rem;
 }
 
+/* ERROR MESSAGES STYLES */
+
 .emptyContainer {
   flex: 1;
   display: flex;
@@ -88,9 +122,25 @@ article {
   color: crimson;
 }
 
+/* MEDIA */
+
 @media (max-width: 991px) {
   article {
     margin-top: 10rem;
+  }
+
+  .intro-section {
+    padding: 3rem;
+  }
+
+  .dynamicContent {
+    font-size: 1.8rem;
+    margin: 0 5rem 1rem 5rem;
+  }
+
+  .alert {
+    font-size: 1.8rem;
+    margin: 0 5rem 0 5rem;
   }
 
   .tables-section {
@@ -103,6 +153,20 @@ article {
 }
 
 @media (max-width: 500px) {
+  .intro-section {
+    padding: 3rem;
+  }
+
+  .dynamicContent {
+    font-size: 1.8rem;
+    margin: 0 3rem 1rem 3rem;
+  }
+
+  .alert {
+    font-size: 1.8rem;
+    margin: 0 3rem 0 3rem;
+  }
+
   .tables-section {
     padding: 2rem;
   }

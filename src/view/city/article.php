@@ -5,6 +5,58 @@
 ?>
 
 <article>
+    <section id="intro" class="intro-section">
+        <h2 class="intro-section-title">Introdução</h2>
+        <?php 
+        
+            if (isset($_SESSION['current_city'])) {
+                $current_city = $_SESSION['current_city'];
+
+                $sql = "SELECT descrip FROM city WHERE id_city='$current_city'";
+                
+                try {
+                    $stmt = $connection->prepare($sql);
+                    $stmt->execute();
+                    
+                } catch(PDOException $err) {
+                    echo "
+                        <script>
+                            alert('Desculpe! Houve um erro.');
+                            window.location.href = '../home/index.php';
+                        </script>
+                    ";
+                }
+                
+                if ($stmt->rowCount() > 0) {
+                    while ($city = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                        echo "
+                            <p class='dynamicContent'>".$city['descrip']."</p>
+                        ";
+                    }
+                } else {
+                    echo "
+                        <script>
+                            alert('Desculpe! Houve um erro.');
+                            window.location.href = '../home/index.php';
+                        </script>
+                    ";
+                }
+                
+            } else {
+                echo "
+                    <script>
+                        alert('Desculpe! Houve um erro.');
+                        window.location.href = '../home/index.php';
+                    </script>
+                ";
+            }
+
+        ?>
+        <p class="alert">
+            Os dados que foram recolhidos são de bases de saúde do município e do IBGE, dito isso, alguns municípios não apresentam dados de certas taxas tanto quanto alguns valores.
+        </p>
+    </section>
+
     <section id="cityMap" class="map-section">
         <h2 class="map-section-title">Mapa do município</h2>
 
