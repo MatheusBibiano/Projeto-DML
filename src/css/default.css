@@ -5,19 +5,11 @@
 
 :root {
   font-size: 62.5%;
-
-  --primary: rgb(143, 214, 255);
-  --secondary: rgb(28, 137, 201);
-  --backgroud: #fefae0;
-  --back: #000;
-  --font-hover: #fefae0;
-  --transparent: rgb(0, 0, 0, 0.5);
-  --selection-color: #fefae0;
 }
 
 *::selection {
-  background-color: var(--transparent);
-  color: var(--selection-color);
+  background-color: rgb(0, 0, 0, 0.5);
+  color: #fefae0;
 }
 
 * {
@@ -25,6 +17,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto";
+  scroll-behavior: smooth;
 }
 
 body {
