@@ -3,7 +3,7 @@
     <h2 class="sec-title">Municípios</h2>
     <div class="img-grid">
       <div class="firstItem">
-        <button type="button" class="microContainer">
+        <button type="button" class="microContainer" title="Ver informações">
           <div class="background"></div>
           <span class="microTitle">Microrregião</span>
         </button>
@@ -37,7 +37,7 @@
             <form class='grid-item' action='../city/index.php' method='post'>
               <input type='text' name='id_city' value='".$city['id_city']."' hidden/>
               <input type='text' name='city_name' value='".$city['city_name']."' hidden/>
-              <button type='submit' class='link-to-city'>
+              <button type='submit' class='link-to-city' title='Ver informações'>
                 <img class='img-city' src='../../../assets/img/cities/".$city['image'].".jpg' alt='imagem'>
                 <span class='img-title'>".$city['city_name']."</span>
               </button>
@@ -73,7 +73,7 @@
   <section>
       <h2 class="sec-title">Feedback</h2>
       <form action="./index.php" method="post" class="feedback-container">
-        <label for='feedback' id="msg">Avalie nosso site, envie sugestões e críticas para que possamos melhora sua experiência:</label>
+        <label for='feedback-field' id="msg">Avalie nosso site, envie sugestões e críticas para que possamos melhora sua experiência:</label>
         <textarea 
           name="feedback" 
           id="feedback-field" 
@@ -84,7 +84,7 @@
         ></textarea>
         <button type="submit" class="submit">
           <div class="submitText">Enviar</div>
-          <img src="../../../assets/icons/send_white_24dp.svg" class="sendIcon">
+          <img src="../../../assets/icons/send_white_24dp.svg" class="sendIcon" alt="Icone enviar">
         </button>
       </form>
   </section>

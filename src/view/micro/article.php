@@ -23,7 +23,7 @@
                 <img src="../../../assets/icons/arrow_back_ios_new_black_24dp.svg" class="arrowButtonIcon" alt="Anterior">
             </button>
 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14849.967390793001!2d-44.650285478883404!3d-21.488446405725004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9f94735a4b3c93%3A0x3e75d002617f17b7!2sCarrancas%2C%20MG%2C%2037245-000!5e0!3m2!1spt-BR!2sbr!4v1615516675656!5m2!1spt-BR!2sbr" allowfullscreen="" loading='lazy'></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14849.967390793001!2d-44.650285478883404!3d-21.488446405725004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9f94735a4b3c93%3A0x3e75d002617f17b7!2sCarrancas%2C%20MG%2C%2037245-000!5e0!3m2!1spt-BR!2sbr!4v1615516675656!5m2!1spt-BR!2sbr" allowfullscreen="" loading='lazy' title="Mapa das microrregiões"></iframe>
             
             <button class="arrowButton" id="nextButton">
                 <img src="../../../assets/icons/arrow_forward_ios_black_24dp.svg" class="arrowButtonIcon" alt="Próximo">

@@ -23,13 +23,24 @@ footer {
   color: #fff;
 }
 
-footer > p {
+footer > p,
+footer > address {
   font-size: 1.4rem;
   margin: 0;
   padding: 0;
   text-align: center;
   word-wrap: break-word;
   margin: 0 1rem 0 1rem;
+}
+
+.tel {
+  cursor: pointer;
+  color: #fff;
+  text-decoration: underline;
+}
+
+.tel:hover {
+  color: #fff;
 }
 
 .copyright {

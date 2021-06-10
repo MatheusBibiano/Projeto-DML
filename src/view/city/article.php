@@ -83,7 +83,7 @@
                 if ($stmt->rowCount() > 0) {
                     while ($city = $stmt->fetch(PDO::FETCH_ASSOC)) {
                         echo "
-                            <iframe src='".$city['location']."' allowfullscreen='' loading='lazy'></iframe>
+                            <iframe src='".$city['location']."' allowfullscreen='' loading='lazy' title='Mapa da microrregião'></iframe>
                         ";
                     }
                 } else {
