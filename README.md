@@ -8,7 +8,7 @@ Este site foi desenvolvido em parceria com um projeto de iniciação científica
 
 * [Sobre](#sobre)
 * [Status](#status)
-* [Recursos](#recursos)
+* [Características](#características)
 * [Requisitos](#requisitos)
 * [Tecnologias](#tecnologias)
 * [Autor](#autor)
@@ -18,20 +18,20 @@ Este site foi desenvolvido em parceria com um projeto de iniciação científica
 
 Projeto concluído ✅
 
-### 🧬 Características
+### Características
 
 - [x] Página inicial
 - [x] Enviando feedback
 - [x] Visualização de tabela
 - [x] Visualização do mapa
 
-### 📦 Requisitos
+### Requisitos
 
 1. Para rodar o aplicativo é necessário instalar a plataforma de software livre [XAMPP](https://www.apachefriends.org).
 
 ```bash
     # Acesse a pasta htdosc dentro da pasta xampp via terminal / cmd
-    $ cd C: \xampp\htdocs # Windows
+    $ cd C:\xampp\htdocs # Windows
     $ cd /opt/lampp/htdocs # Linux
 
     # Clone este repositório dentro da pasta htdocs
@@ -43,9 +43,9 @@ Projeto concluído ✅
 
 3. Para configurar o acesso ao banco de dados acesse **http://localhost/phpmyadmin/server_sql.php** a partir do navegador. Copie e cole todo o conteúdo do arquivo **db.sql** na guia **SQL** e clique em **executar**.
 
-4. Quando tudo já estiver configurado, basta acessar a **[home page](localhost/DML/src/view/home/)** para visualizar a aplicação em operação.
+4. Quando tudo já estiver configurado, basta acessar **http://localhost/DML/src/view/home/** para visualizar a aplicação em operação.
 
-### 🛠️ Tecnologias
+### Tecnologias
 
 As seguintes tecnologias foram utilizadas na construção do projeto:
 
@@ -61,6 +61,6 @@ Matheus Bibiano Alves
 
 [<img src="https://img.shields.io/badge/twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white" />](https://twitter.com/Bibiano_Alves) [<img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />](https://www.linkedin.com/in/matheus-bibiano-alves-a2438220a/) [<img src = "https://img.shields.io/badge/facebook-%231877F2.svg?&style=for-the-badge&logo=facebook&logoColor=white">](https://www.facebook.com/matheus.bibiano1/)
 
-### 📜 Licença
+### Licença
 
 [MIT](https://choosealicense.com/licenses/mit/)
