@@ -3,7 +3,7 @@
 ### Sobre
 
 Este site foi desenvolvido em parceria com um projeto de iniciação científica (BIC Jr) realizado no [CEFET MG Campus IX - Nepomuceno](https://www.nepomuceno.cefetmg.br), cujo objetivo é apresentar as informações demográficas das microrregiões de Lavras-MG, coletadas no site do IBGE, de forma mais visual.
-
+<br/>
 
 ### 📌 Conteúdo
 
@@ -14,12 +14,12 @@ Este site foi desenvolvido em parceria com um projeto de iniciação científica
 * [Tecnologias](#tecnologias)
 * [Autor](#autor)
 * [Licença](#licença)
-
+<br/>
 
 ### Status
 
 Projeto concluído ✅
-
+<br/>
 
 ### Características
 
@@ -27,7 +27,7 @@ Projeto concluído ✅
 - [x] Enviando feedback
 - [x] Visualização de tabela
 - [x] Visualização do mapa
-
+<br/>
 
 ### Requisitos
 
@@ -58,7 +58,7 @@ Projeto concluído ✅
 5. Para configurar o acesso ao banco de dados acesse **http://localhost/phpmyadmin/server_sql.php** a partir do navegador. Copie e cole todo o conteúdo do arquivo **db.sql** na guia **SQL** e clique em **executar**.
 
 6. Quando tudo já estiver configurado, basta acessar **http://localhost/DML/src/view/home/** para visualizar a aplicação em operação.
-
+<br/>
 
 ### Tecnologias
 
@@ -68,15 +68,15 @@ As seguintes tecnologias foram utilizadas na construção do projeto:
 - [CSS3](https://www.w3schools.com/css/)
 - [PHP](https://www.php.net)
 - [MySQL](https://www.mysql.com)
-
+<br/>
 
 ### Autor
-<img src="assets/author.png" width="150" height="150">
 
-Matheus Bibiano Alves
-
-[<img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />](https://www.linkedin.com/in/matheus-bibiano-alves) [<img src = "https://img.shields.io/badge/facebook-%231877F2.svg?&style=for-the-badge&logo=facebook&logoColor=white">](https://www.facebook.com/matheus.bibiano1/) [<img src="https://img.shields.io/badge/twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white" />](https://twitter.com/Bibiano_Alves)
-
+| Matheus Bibiano                                       |
+|-------------------------------------------------------|
+| <img src="assets/author.png" width="150" height="150">|
+| [<img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />](https://www.linkedin.com/in/matheus-bibiano-alves)|
+<br/>
 
 ### Licença
 
